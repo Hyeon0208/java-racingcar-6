@@ -1,6 +1,6 @@
 # 기능 목록
 
-- [] 사용자가 잘못된 값을 입력할 경우 IllegalArgumentException을 발생시킨 후,
+- [x] 사용자가 잘못된 값을 입력할 경우 IllegalArgumentException을 발생시킨 후,
     `[ERROR]`를 포함한 메시지를 출력하고 그 부분부터 다시 입력 받는다.
 
 - [x] 경주 할 자동차 이름을 입력받는다.
