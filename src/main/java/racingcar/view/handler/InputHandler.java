@@ -1,6 +1,7 @@
 package racingcar.view.handler;
 
 import java.util.function.Supplier;
+import racingcar.util.StringConvertor;
 import racingcar.view.ErrorView;
 import racingcar.view.InputView;
 
@@ -15,6 +16,11 @@ public class InputHandler {
 
     public String receiveValidatedCarNames() {
         return receiveValidatedInput(inputView::inputCarNames);
+    }
+
+    public int receiveValidatedTryCount() {
+        String tryCount = receiveValidatedInput(inputView::inputTryCount);
+        return StringConvertor.convertToInt(tryCount);
     }
 
     private <T> T receiveValidatedInput(Supplier<T> inputView) {
